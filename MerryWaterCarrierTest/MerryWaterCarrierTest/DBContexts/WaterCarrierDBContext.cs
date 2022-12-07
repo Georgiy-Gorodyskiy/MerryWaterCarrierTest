@@ -30,8 +30,8 @@ namespace MerryWaterCarrierTest.DBContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connection = "server=localhost;user=root;password=12345678;database=MerryWaterCarrierDatabase.db;";
-            ServerVersion vesrion = ServerVersion.AutoDetect(connection);
-            optionsBuilder.UseMySql(connection, vesrion);
+            ServerVersion vesrsion = ServerVersion.AutoDetect(connection);
+            optionsBuilder.UseMySql(connection, vesrsion);
         }
     }
 }
